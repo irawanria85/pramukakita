@@ -46,23 +46,25 @@
     <script src="assets/codiqa.ext.js"></script>
 
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
+	<!-- Of course it is advisable to have touch icons ready for each device -->
+	<link rel="apple-touch-icon" href="../images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/touch-icon-iphone4.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<meta name="apple-mobile-web-app-title" content="Add to Home">
-<link rel="shortcut icon" sizes="16x16" href="../../imgs/icon-16x16.png">
-<link rel="shortcut icon" sizes="196x196" href="../../imgs/icon-196x196.png">
-<link rel="apple-touch-icon-precomposed" href="../../imgs/icon-152x152.png">
+<script type="text/javascript">
 
-<link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
-<script src="../../src/addtohomescreen.js"></script>
-<script>
-var a = addToHomescreen({
-	onAdd: function () {
-		alert('Welcome to the homescreen!');
-	}
-});
+var addToHomeConfig = {
+	message: 'Add Pet360 Mobile to your <strong>%device</strong> home screen.<br /> Click the %icon. icon below, and select <strong>"Add to Home Screen"</strong>'
+};
+
 </script>
+
+	<link rel="stylesheet" href="../../style/add2home.css">
+	<script type="application/javascript" src="../../src/add2home.js" charset="utf-8"></script>
+	<script type="application/javascirpt" src="../../src/scripts.js" charset="utf-8"></script>
+
 </head>
 
 <body>
